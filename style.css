@@ -1,0 +1,46 @@
+#lside{
+    height: 400px;
+    width:300px ;
+    background-color: #05716c;
+    padding-top: 50px;
+    padding-left: 20px;
+    float: left;
+    margin-left: 100px;
+    text-align: justify-all;
+    color: white;
+    font-size: 20px;
+        }
+
+#center{
+    height: 400px;
+    width: 300px;
+    float: left;
+    background-color:white;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 10px;
+            
+        }
+#rside{
+    height: 400px;
+    width: 400px;
+    background-color:#05716c ;
+    float: left;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 10px;
+    }        
+#photo
+{
+    width: 200;
+    height: 200;
+}
+h2{
+        color: white;
+        font-family: Arial;
+}
+p{
+    font-family: Brush Script MT ;
+    font-size: 20px;
+    color: yellow; 
+}

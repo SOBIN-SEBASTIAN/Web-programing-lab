@@ -1,0 +1,104 @@
+<html>
+<head>
+   <title>Validation</title>
+   <style>
+      span{
+         color: red;
+      }
+   </style>
+</head>
+<body>
+<h1>Registration</h1>
+<form name="newform"   method="post" onsubmit=" return validate()">
+      <table>
+         <tr>
+            <th>first name</th>
+            <td><input type="text" name="fname" id="f1"></td>     
+            <td><span id="s1"></span></td>
+         </tr>
+         <tr>
+            <th>Last name</th>
+            <td><input type="text" name="lname" id="f2"></td>
+            <td><span id="s2"></span></td>
+         </tr>
+         <tr>
+            <th>User name</th>
+            <td><input type="text" name="uname" id="f3"></td>
+            <td><span id="s3"></span></td>
+         </tr>           
+         <tr>
+            <th>password</th>
+            <td><input type="password" name="pswd" id="f4"></td> 
+            <td><span id="s4"></span></td>           
+         </tr>
+         <tr>      
+            <th>comfirm password</th>
+            <td><input type="password" name="pswd2" id="f5"></td>
+            <td><span id="s5"></span></td>
+         </tr>
+         <tr>
+            <th>Mobile Number</th>
+            <td><input type="text" name="mob" id="f6"></td>
+            <td><span id="s6"></span> </td>        
+         </tr>
+         <tr>
+            <th>Email</th>  
+            <td><input type="text" name="mail" id="f7"></td>           
+            <td><span id="s7"></span></td>
+         </tr>
+         <tr>
+            <td></td>
+            <td><input type="submit" name="sub" "></td> 
+            <td></td>
+         </tr>
+</form>
+</table>
+<script type="text/javascript">
+         var fname = document.getElementById('f1').value;
+         var lname = document.getElementById('f2').value;
+         var user = document.getElementById('f3').value;
+         var pass = document.getElementById('f4').value;
+         var confirmpass = document.getElementById('f5').value;
+         var mobileNumber = document.getElementById('f6').value;
+         var email = document.getElementById('f7').value;
+         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+   function validate()
+   {
+         if(fname == "")
+         {
+            document.getElementById('s1').innerHTML = fname+" * Please fill the first name field";
+         }
+         if(!isNaN(fname))
+         {
+            document.getElementById('s1').innerHTML =" * only characters are allowed";
+         } 
+
+         if(lname =="")
+         {
+            document.getElementById('s2').innerHTML="* Please fill the Last name field";
+         }
+         
+         if(pass ==""){
+            document.getElementById('s4').innerHTML =" * Please fill the password field";
+         }
+         else if((pass.length <= 5) || (pass.length > 20)) {
+            document.getElementById('s4').innerHTML =" *Passwords lenght must be between  5 and 20";
+         }
+
+
+         if(pass!=confirmpass){
+            document.getElementById('s5').innerHTML =" *Password does not match the confirm password";
+         }
+
+
+
+         if(confirmpass == ""){
+            document.getElementById('s5').innerHTML =" * Please fill the confirmpassword field";
+            return false;
+         }
+   }
+      
+</script>
+</body>
+</html>

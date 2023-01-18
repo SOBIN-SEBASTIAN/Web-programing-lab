@@ -1,0 +1,30 @@
+<html>
+<center>
+<h1 id="h1">Different Background color</h1>
+<p id="pi">
+</p>
+<center>
+<button id="b1" > Click Here </button>
+<button id="b2" > Click here to change color</button>
+
+<script>
+    document.getElementById("b1").addEventListener("click",fun4)
+    document.getElementById("b2").addEventListener("click",fun5)
+
+function fun4(){
+    document.body.style.backgroundImage="url('https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fkochi&psig=AOvVaw0xtluvNoE3G8i4b3mSNK5_&ust=1669246512709000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMjajv75wvsCFQAAAAAdAAAAABAE')";
+ }
+
+    function getColorCode() {
+      var makeColorCode = '0123456789ABCDEF';
+      var code = '#';
+      for (var count = 0; count < 6; count++) {
+         code =code+ makeColorCode[Math.floor(Math.random() * 16)];
+      }
+      return code;
+  }
+function fun5(){
+    document.body.style.backgroundColor = getColorCode()
+}
+</script>
+</html>

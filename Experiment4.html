@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Student Registeration</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <style>
+            body {
+  background-image: url(download.jpeg );
+}
+        </style>
+</head>
+<body>
+    <center>
+    <h1 style=" background-color: D2001A; color:FFFAE7"><u>Student Registration</u></h1>
+    </center>
+    <form name="regs" method="post" action="">
+    <table align="center" bgcolor="yellow" width="400"cellspacing="15">
+        <tr align="left" >
+            <th>FIRST NAME</th>
+            <td><input type="text" name="f_name" size="25"></td>
+        </tr>
+        <tr align="left">
+            <th>LAST NAME</th>
+            <td><input type="text" name="l_name" size="25"></td>
+        </tr>
+        <tr align="left">
+            <th>DATE OF BRITH</th>
+            <td ><input type="DATE" name="dob"></td>
+        </tr>
+        <tr align="left">
+            <th>EMAIL</th>
+            <td><input type="email" name="email" size="25"></td>
+        </tr>
+        <tr align="left">
+            <th>MOBILE NUMBER</th>
+            <td><input type="text" name="mob" size="10" ></td>
+        </tr>
+        <tr align="left">
+            <th>GENDER</th>
+            <td>MALE<input type="radio" name="gender"> FEMALE<input type="radio" name="gender"></td>
+        </tr>
+        <tr align="left">
+            <th>ADDRESS</th>
+            <td><textarea name="address" cols="26"></textarea></td>
+        </tr>
+        <tr align="left">
+            <th>CITY</th>
+            <td><input type="text" name="city" size="25"></td>
+        </tr>
+        <tr align="left">
+            <th>PIN CODE</th>
+            <td><input type="text" name="pin" size="10"></td>
+        </tr>
+        <tr align="left">
+            <th>STATE</th>
+            <td><select>
+                <option>Kerala</option>
+                <option>Andhra Pradesh</option>
+                <option>Karnataka</option>
+                <option></option>Tamil Nadu</option>
+                </select>
+            </td>
+        </tr>
+        <tr align="left">
+        <th>HOBBIES <br /><br /><br /></th>
+        <td>
+        Drawing
+        <input type="checkbox" name="Hobby_Drawing" value="Drawing" />
+        Singing
+        <input type="checkbox" name="Hobby_Singing" value="Singing" />
+        Dancing
+        <input type="checkbox" name="Hobby_Dancing" value="Dancing" />
+        Sketching
+        <input type="checkbox" name="Hobby_Cooking" value="Cooking" />
+        <br />
+        Others
+        <input type="checkbox" name="Hobby_Other" value="Other">
+        <input type="text" name="Other_Hobby" maxlength="30" />
+        </td>
+    </tr>
+    <tr align="left">
+        <th>SELECT COURSE</th>
+        <td>
+            <select>
+                <option name="course">MCA REGULAR 2 YEAR</option>
+                <option name="course">MCA INTEGRATED MCA 5 YEAR</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"  align="center"><input type="submit" value="APPLY"></td>
+    </tr>
+    </table>
+    </form>
+</body>
+</html>
